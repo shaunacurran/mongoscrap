@@ -16,7 +16,6 @@
   "bugs": {
     "url": "https://github.com/shaunacurran/mongoscrap/issues"
   },
-  
   "homepage": "https://github.com/shaunacurran/mongoscrap.git",
   "dependencies": {
     "body-parser": "^1.17.2",
