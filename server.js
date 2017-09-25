@@ -57,11 +57,22 @@ app.get("/scrape", function (req, res) {
         res.json(result);
       });
     });
-  
-    // Log the results once you've looped through each of the elements found with cheerio
-    // console.log(results);
+  });
+}); 
+
+app.get("/all", function (req, res){
+  db.articles.find({}, function (error, found) {
+    if (error) {
+      console.log(error);
+    }
+    else {
+      res.json(found);
+     }
   });
 });
+    // Log the results once you've looped through each of the elements found with cheerio
+    // console.log(results);
+
 
 //listening on port 3000
 app.listen(3000, function () {
