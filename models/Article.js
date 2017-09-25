@@ -11,7 +11,7 @@ var ArticleSchema = new Schema({
     required: true
   },
   // link is a required string
-  // todo save summary paragraph instead of link
+  //need summary
   link: {
     type: String,
     required: true
