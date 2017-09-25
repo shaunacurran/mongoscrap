@@ -38,7 +38,7 @@ router.get("/savedarticles", function(req, res) {
   });
 });
 
-// A GET request to scrape the echojs website
+// A GET request to scrape the nyt website
 router.post("/scrape", function(req, res) {
 
   // First, we grab the body of the html with request
