@@ -8,7 +8,7 @@ var cheerio = require("cheerio");
 
 var mongoose = require("mongoose");
 
-// Set mongoose to leverage built in JavaScript ES6 Promises
+// Set mongoose for Promises
 mongoose.Promise = Promise;
 
 var Note = require("../models/Note.js");
@@ -18,7 +18,7 @@ router.get("/", function(req, res) {
   res.render("index");
 });
 
-// This will get the articles scraped and saved in db and show them in list.
+// scrape articles.
 router.get("/savedarticles", function(req, res) {
 
   // Grab every doc in the Articles array
