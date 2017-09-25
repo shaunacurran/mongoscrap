@@ -1,28 +1,27 @@
 {
-  "name": "hw_mongo",
+  "name": "mongoscrap",
   "version": "1.0.0",
-  "description": "mongoose scrap",
-  "main": "index.js",
+  "description": "New York Times News Scraper",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "shaunacurran"
+    "url": "git+https://github.com/shaunacurran/mongoscrap.git"
   },
-  "keywords": [
-    "mongo"
-  ],
   "author": "shaunacurran",
   "license": "ISC",
+  },
+  "homepage": "https://github.com/shaunacurran/mongoscrap.git",
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "cheerio": "^1.0.0-rc.2",
-    "express": "^4.15.4",
+    "body-parser": "^1.17.2",
+    "cheerio": "^1.0.0-rc.1",
+    "express": "^4.15.3",
     "express-handlebars": "^3.0.0",
-    "mongo": "^0.1.0",
-    "mongojs": "^2.4.1",
-    "mongoose": "^4.11.12",
-    "request": "^2.82.0"
+    "mongoose": "^4.10.4",
+    "morgan": "^1.8.2",
+    "request": "^2.81.0"
   }
 }
